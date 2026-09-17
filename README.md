@@ -1,46 +1,62 @@
-# Aplicație Python pentru Vizualizarea Interactivă a Datelor
+# Interactive Data Visualization Application
+<br>
 
-Acest proiect Python permite vizualizarea datelor pe un grafic 2D, conectarea punctelor cu o linie discontinuă și afișarea numelui asociat fiecărui punct. Este folosită librăria `matplotlib` pentru a crea graficele și `numpy` pentru a manipula datele.
+This Python project allows data visualization on a 2D graph, connecting points with a dashed line and displaying the name associated with each point. The `matplotlib` library is used to create the graphs, and `numpy` is used to manipulate the data.
+<br>
 
-## Utilizare GUI
+## GUI Usage
+<br>
 
-Pentru a rula programul și a vizualiza graficul folosind interfața grafică:
+To run the program and visualize the graph using the graphical user interface:
+<br>
 
-1. Execută scriptul Python `main.py`:
+1. Run the Python script `main.py`:
     ```sh
     python main.py
     ```
+<br>
 
-2. În fereastra GUI, poți adăuga rânduri de date introducând numele, valoarea x și valoarea y în câmpurile corespunzătoare și apăsând butonul "Adaugă rând".
+2. In the GUI window, you can add data rows by entering the name, x value, and y value in the corresponding fields and clicking the "Add Row" button.
+<br>
 
-3. Pentru a șterge un rând, apasă butonul "Șterge" de lângă rândul pe care dorești să-l elimini.
+3. To delete a row, click the "Delete" button next to the row you want to remove.
+<br>
 
-4. După ce ai introdus toate datele, apasă butonul "Desenează grafic" pentru a genera și vizualiza graficul.
+4. After entering all the data, click the "Draw Graph" button to generate and display the graph.
+<br>
 
-## Structura Proiectului
+## Project Structure
+<br>
 
-- `main.py`: Scriptul principal care lansează interfața grafică.
-- `gui.py`: Conține clasa `DataEntryApp` care gestionează interfața grafică pentru introducerea datelor.
-- `graph.py`: Conține funcțiile pentru citirea datelor din fișierul CSV și desenarea graficului.
-- `data.csv`: Fișierul CSV cu datele de intrare.
+- `main.py`: The main script that launches the graphical user interface.
+- `gui.py`: Contains the `DataEntryApp` class that manages the graphical user interface for data entry.
+- `graph.py`: Contains the functions for reading data from the CSV file and drawing the graph.
+- `data.csv`: The CSV file containing the input data.
+<br>
 
-## Dependențe
+## Dependencies
+<br>
 
-Asigură-te că ai instalat următoarele pachete Python:
+Make sure you have the following Python packages installed:
+<br>
 
 - `tkinter`
 - `matplotlib`
 - `numpy`
+<br>
 
-Le poți instala folosind `pip`:
+You can install them using `pip`:
+<br>
 
 ```sh
 pip install matplotlib numpy tkinter
 ```
+<br>
 
-## Funcționalități
-- Adăugare Rânduri: Permite adăugarea de noi rânduri de date în interfața grafică.
-- Ștergere Rânduri: Permite ștergerea rândurilor de date din interfața grafică.
-- Desenare Grafic: Generează și afișează un grafic 2D pe baza datelor introduse sau încărcate din fișierul CSV.
-- Sortare Date: Sortează datele pe baza valorilor x înainte de a le afișa pe grafic.
-- Etichetare Puncte: Afișează numele asociat fiecărui punct pe grafic.
+## Features
+
+- Add Rows: Allows adding new data rows through the graphical interface.
+- Delete Rows: Allows deleting data rows from the graphical interface.
+- Draw Graph: Generates and displays a 2D graph based on the entered data or data loaded from the CSV file.
+- Data Sorting: Sorts the data based on x values before displaying it on the graph.
+- Point Labeling: Displays the name associated with each point on the graph.
